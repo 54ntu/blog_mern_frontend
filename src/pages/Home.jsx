@@ -6,7 +6,9 @@ import axios from "axios";
 const Home = () => {
   const [blog, setBlog] = useState([]);
   const getBlogs = async () => {
-    const blogs = await axios.get("http://localhost:4000/api/v1/getblog");
+    const blogs = await axios.get(
+      "https://blog-mern-backend-2s77.onrender.com/api/v1/getblog"
+    );
     console.log(blogs.data.data);
     setBlog(blogs.data.data);
   };

@@ -14,7 +14,7 @@ const SingleBlog = () => {
   const trimmedId = id.trim();
   const getSingleblog = async () => {
     const response = await axios.get(
-      `http://localhost:4000/api/v1/blog/${trimmedId}`
+      `https://blog-mern-backend-2s77.onrender.com/api/v1/blog/${trimmedId}`
     );
 
     console.log("response value is : ", response.data.data);
@@ -24,7 +24,7 @@ const SingleBlog = () => {
   const deleteBlog = async () => {
     try {
       const response = await axios.delete(
-        `http://localhost:4000/api/v1/deleteblog/${trimmedId}`
+        `https://blog-mern-backend-2s77.onrender.com/api/v1/deleteblog/${trimmedId}`
       );
 
       console.log(`response getting after deleting blog...`, response);

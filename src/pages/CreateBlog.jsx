@@ -28,7 +28,7 @@ const CreateBlog = () => {
     // console.log("form submitted");
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/addblog",
+        "https://blog-mern-backend-2s77.onrender.com/api/v1/addblog",
         data,
         {
           headers: {

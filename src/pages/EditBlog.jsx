@@ -30,7 +30,7 @@ const EditBlog = () => {
     e.preventDefault();
     try {
       const response = await axios.patch(
-        `http://localhost:4000/api/v1/update/${trimmedId}`,
+        `https://blog-mern-backend-2s77.onrender.com/api/v1/update/${trimmedId}`,
         data,
         {
           headers: {
@@ -51,7 +51,7 @@ const EditBlog = () => {
 
   const getBlogById = async () => {
     const response = await axios.get(
-      `http://localhost:4000/api/v1/blog/${trimmedId}`
+      `https://blog-mern-backend-2s77.onrender.com/api/v1/blog/${trimmedId}`
     );
     // console.log(response.data.data);
     setData({
